@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Puzzle Game</title>
+    <link rel="stylesheet" href="maps.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="controls-panel">
+            <button id="locateUserBtn">Location</button>
+            <button id="displayMapBtn">Make Puzzle</button>
+        </div>
+        
+        <div class="content-panel">
+            <div id="mapDisplay"></div>
+            <div id="imageSection"></div>
+        </div>
+        
+        <div class="puzzle-area">
+            <div class="scrambled-section" id="scrambledImages"></div>
+            <div class="puzzle-board" id="puzzleGrid"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+    <script src="https://rawcdn.githack.com/mapbox/leaflet-image/v0.0.4/leaflet-image.js"></script>
+    <script src="maps.js"></script>
+</body>
+</html>
