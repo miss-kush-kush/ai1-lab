@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="lista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-container">
+        <input type="text" id="search-bar" placeholder="Search tasks..." oninput="filterTasks()">
+        <div id="task-list"></div>
+        <div class="add-task">
+            <input type="text" id="task-input" placeholder="Task description" maxlength="255">
+            <input type="datetime-local" id="task-deadline">
+            <button onclick="addTask()">Add</button>
+        </div>
+    </div>
+    <script src="lista.js"></script>
+</body>
+</html>
