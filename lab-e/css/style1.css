@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/blue_sky.jpg');
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.header-title h1 {
+    color: #fff;
+    font-size: 3em;
+    margin: 0;
+}
+
+.header-title h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero-section {
+    margin-top: 120px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px; 
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.about-section h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+  -moz-animation: glow2 1s ease-in-out infinite alternate;
+  animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.classes-section {
+    padding: 40px;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.class-box {
+    text-align: center;
+}
+
+.class-box img {
+    width: 200px;      
+    height: 200px;     
+    object-fit: cover; 
+    border: 5px solid #fff;
+}
+
+.class-box p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .class-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .class-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  @-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0023e6, 0 0 40px #0023e6, 0 0 50px #0023e6, 0 0 60px #0023e6, 0 0 70px #0023e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4d94ff, 0 0 40px #4d94ff, 0 0 50px #4d94ff, 0 0 60px #4d94ff, 0 0 70px #4d94ff, 0 0 80px #4d94ff;
+    }
+  }
